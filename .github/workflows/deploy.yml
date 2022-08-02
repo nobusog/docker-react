@@ -3,6 +3,12 @@ on:
   push:
     branches:
       -master
+      -helpme
+  pull_request:
+    branches:
+      -master
+      -helpme
+  
 
 jobs:
   build:
