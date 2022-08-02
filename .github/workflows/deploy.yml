@@ -2,12 +2,12 @@ name: Deploy my-app
 on:
   push:
     branches:
-      -master
-      -helpmes
+      - master
+      - helpmes
   pull_request:
     branches:
-      -master
-      -helpmes
+      - master
+      - helpmes
 
 
 jobs:
