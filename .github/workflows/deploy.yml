@@ -2,7 +2,7 @@ name: Deploy my-app
 on:
   push:
     branches:
-      -main
+      -master
 
 jobs:
   build:
@@ -27,5 +27,3 @@ jobs:
           region: us-east-2
           version_label: ${{ github.sha }}
           deployment_package: deploy.zip
-
-
