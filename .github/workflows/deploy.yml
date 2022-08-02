@@ -3,11 +3,6 @@ on:
   push:
     branches:
       - master
-      - helpmes
-  pull_request:
-    branches:
-      - master
-      - helpmes
 
 
 jobs:
