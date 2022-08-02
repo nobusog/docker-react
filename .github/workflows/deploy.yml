@@ -2,12 +2,7 @@ name: Deploy my-app
 on:
   push:
     branches:
-      -master
-      -helpmes
-  pull_request:
-    branches:
-      -master
-      -helpmes
+      - master
 
 jobs:
   build:
@@ -22,7 +17,7 @@ jobs:
         run: zip -r deploy.zip . -x '*.git'
 
       - name: Deploy to EB
-        uses: einaregilsson/beanstalk-delop@v18
+        uses: einaregilsson/beanstalk-deploy@v18
         with:
           aws_access_key: ${{ secrets.AWS_ACCESS_KEY}}
           aws_secret_key: ${{ secrets.AWS_SECRET_KEY}}
